@@ -1,0 +1,5 @@
+OLIS Microorganism code,Microorganism Type,Taxonomic level,Microorganism Name,Alternative Name 1,Alternative Name 2,Short Name,Source,External Link,Reportable,Reportable Context,Effective Start Date,Effective End Date,Change Note,Comments,Workflow Status Indicator,Validation Status Indicator
+09678009,Organism,,Haemophilus sputorum (organism),Haemophilus sputorum,,,,,,,1/29/2017,,User Requested Addition V1.91,,RELEASED,ACTIVE
+10015007,Organism,,Eimeria arkhari (organism),Eimeria arkhari,,,,,,,,,Added in v.1.35 (SNOMED),,RELEASED,ACTIVE
+103431004,Organism,,Yersinia enterocolitica serogroup O:5 (organism),Yersinia enterocolitica serogroup O:5,,,,,,,,,Added in v.1.35 (SNOMED),,RELEASED,ACTIVE
+22339002,Organism,,Gamma-hemolytic streptococcus (organism),Gamma-hemolytic streptococcus,,,,,,,,,Added in v.1.35 (SNOMED),,RELEASED,ACTIVE

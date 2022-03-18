@@ -1,0 +1,21 @@
+{
+  "name": "redis-meta-ts",
+  "version": "0.0.1",
+  "author": "Stuart Thompson",
+  "description": "Nomenclature prototype using Redis",
+  "license": "MIT",
+  "scripts": {
+    "loadDB": "ts-node-dev --pretty --transpile-only src/loadDB.ts",
+    "queryDB": "ts-node-dev --pretty --transpile-only src/queryDB.ts"
+  },
+  "dependencies": {
+    "csv-parser": "3.0.0",
+    "redis": "4.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.18",
+    "@types/redis": "4.0.11",
+    "ts-node-dev": "1.1.8",
+    "typescript": "4.5.5"
+  }
+}

@@ -1,0 +1,5 @@
+"License_no"|"Org_type"|"Org_Name"|"Address1"|"Address2"|"City"|"Province"|"PostalCode"|"phone"|"fax"|"OID"|"OIDID"|"UPI"
+"5000"|"LAB"|"OLIS BSD"|"415 Yonge Street"|""|"Toronto"|"ON"|"M5B 2E7"|""|""|"2.16.840.1.113883.3.59.1"|"2.16.840.1.113883.3.59.1:5000"|"101426382731"
+"CB00"|"LTC"|"LTCH-Leamington Mennonite Home Long Term Care Residence"|"35 Pickwick Drive"|""|"Leamington"|"ON"|"N8H 4T5"|""|""|"2.16.840.1.113883.3.239.3.59.10"|"2.16.840.1.113883.3.239.3.59.10:CB00"|"104284980893"
+"CB01"|"LTC"|"LTCH-Lee Manor Home"|"875 Sixth Street East"|""|"Owen Sound"|"ON"|"N4K 5W5"|""|""|"2.16.840.1.113883.3.239.3.59.10"|"2.16.840.1.113883.3.239.3.59.10:CB01"|"104284941564"
+"CB02"|"LTC"|"LTCH-Lennox And Addington County General Hospital"|"8 Richmond Park Drive"|""|"Napanee"|"ON"|"K7R 2Z4"|""|""|"2.16.840.1.113883.3.239.3.59.10"|"2.16.840.1.113883.3.239.3.59.10:CB02"|"104285000113"

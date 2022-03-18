@@ -1,0 +1,56 @@
+Special characters: ,.<>{}[]"':;!@#$%^&*()-+=~
+
+OLIS metadata request
+---------------------
+FT.DROPINDEX idx:meta:olis:test:request
+FT.CREATE demo:idx:meta:olis:test:request ON JSON PREFIX 1 meta:olis:test:request: SCHEMA $.requestName AS requestName TEXT NOSTEM $.reportCategory AS reportCategory TAG CASESENSITIVE
+JSON.GET meta:olis:test:request:TR10043-8
+FT.SEARCH idx:meta:olis:test:request "@requestName:amino*"
+FT.SEARCH idx:meta:olis:test:request "@reportCategory:{Chemistry} @requestName:amino*"
+
+OLIS metadata result
+--------------------
+FT.DROPINDEX idx:meta:olis:test:result
+FT.CREATE idx:meta:olis:test:result ON JSON PREFIX 1 meta:olis:test:result: SCHEMA $.loincName AS loincName TEXT NOSTEM $.resultCategory AS resultCategory TAG CASESENSITIVE
+JSON.GET meta:olis:test:result:47213-4
+FT.SEARCH idx:meta:olis:test:result "@loincName:hema*"
+FT.SEARCH idx:meta:olis:test:result "@resultCategory:{MICRO} @loincName:hema*"
+
+OLIS metadata micro-organism
+----------------------------
+FT.DROPINDEX idx:meta:olis:test:micro
+FT.CREATE idx:meta:olis:test:micro ON JSON PREFIX 1 meta:olis:test:micro: SCHEMA $.microName AS microName TEXT NOSTEM $.microType AS microType TAG CASESENSITIVE
+JSON.GET meta:olis:test:micro:103431004
+FT.SEARCH idx:meta:olis:test:micro "@microName:strep*"
+FT.SEARCH idx:meta:olis:test:micro "@microType:{Organism} @microName:strep*"
+
+Test faciity metadata
+---------------------
+FT.DROPINDEX idx:meta:test:facility
+FT.CREATE idx:meta:test:facility ON JSON PREFIX 1 meta:test:facility: SCHEMA $.type AS type TAG CASESENSITIVE $.name AS name TEXT SORTABLE $.licenseId AS licenseId TEXT NOSTEM
+JSON.GET meta:test:facility:104284941564
+FT.SEARCH idx:meta:test:facility "@name:lennox*"
+FT.SEARCH idx:meta:test:facility "@type:{LTC} @name:lennox*"
+FT.SEARCH idx:meta:test:facility "@type:{PHCY} @name:shoppers*"
+FT.SEARCH idx:meta:test:facility "@licenseId:CB01"
+
+Lab metadata
+------------
+FT.DROPINDEX idx:meta:lab:lic
+FT.CREATE idx:meta:lab:lic ON JSON PREFIX 1 meta:lab:lic: SCHEMA $.type AS type TAG CASESENSITIVE $.lookup AS lookup TEXT SORTABLE
+JSON.GET meta:lab:lic:4104
+FT.SEARCH idx:meta:lab:lic "@lookup:alpha*"
+FT.SEARCH idx:meta:lab:lic "@lookup:4104"
+FT.SEARCH idx:meta:lab:lic "@type:{LAB} @lookup:alpha*"
+FT.SEARCH idx:meta:lab:lic "@type:{LAB} @lookup:4104"
+
+Physician metadata
+------------------
+FT.DROPINDEX idx:meta:phys:lic
+FT.CREATE idx:meta:phys:lic ON JSON PREFIX 1 meta:phys:lic: SCHEMA $.type AS type TAG CASESENSITIVE $.lookup AS lookup TEXT SORTABLE
+JSON.GET meta:phys:lic:63225
+FT.SEARCH idx:meta:phys:lic "@lookup:stev*"
+FT.SEARCH idx:meta:phys:lic "@lookup:63225"
+FT.SEARCH idx:meta:phys:lic "@type:{MDL} @lookup:stev*"
+FT.SEARCH idx:meta:phys:lic "@type:{MDL} @lookup:stevensonkev*"
+FT.SEARCH idx:meta:phys:lic "@type:{MDL} @lookup:63225"
